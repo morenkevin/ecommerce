@@ -1,7 +1,5 @@
 <?php
-/**
-* 
-*/
+
 class commande
 {
 	protected $CmdId;
@@ -27,7 +25,6 @@ class commande
 
 		}
 	}
-
 
 	public function SetCmdId($id)
 	{
@@ -63,16 +60,6 @@ class commande
 		return $this->UserId;
 	}
 
-
-
-
-
 }
-
-
-
-
-
-
 
 ?>

@@ -22,27 +22,17 @@ spl_autoload_register('autoloader');
 
 $manager= new manager($pdo);
 
-
-
-
 ?>
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css" type="txt/css">
 
-
-
-
 </head>
-
-
 	
 <body>
 	<header>
 	<div class="en-tete">
 	<a href="menu.php"><div class="logo"></div></a>
-
-
 
 	</div>		
 	<div class="sider"><nav>Rayon :
@@ -70,8 +60,6 @@ $manager= new manager($pdo);
 	}
 	?>
 		
-	
-
 		<?php 
 
 		foreach ($manager->SelectLiCategorie() as $uncategorie) {
@@ -82,7 +70,6 @@ $manager= new manager($pdo);
 	echo '<br>';
 	echo '<li><a href="listeproduit.php?categorie='.$uncategorie->CatId().'">'.$uncategorie->CatLib().'</a></li>';
 	
-
 }
 
 if (isset($_POST['valider'])) {
@@ -96,7 +83,6 @@ if (isset($_GET['modifier'])) {
 	
 	$commande=$manager->SelectCommande($_GET['modifier']);
 
-
 }
 
 if (isset($_POST['modifier'])) {
@@ -104,10 +90,6 @@ if (isset($_POST['modifier'])) {
 	$commande->SetCmdDate($_POST['CmdDate']);
 	$commande->SetCmdMontant($_POST['CmdMontant']);
 	$commande->SetUserId($_POST['UserId']);
-	
-
-
-
 
 	$manager->UpdateCommande($commande);
 
@@ -123,26 +105,14 @@ if (isset($_GET['supprimer'])) {
 
 }
 
-
-
-
-
 ?>
-
-
-
-
 	</ul>
 	</nav>
 	</div>
 
 	<div class="main">
 
-
-
 <table>
-
-
 <tr>
 <th>Commande Id</th>
 <th>Commande Date</th>
@@ -151,12 +121,10 @@ if (isset($_GET['supprimer'])) {
 <th>Action</th>
 </tr>
 
-
 <?php 
 
 $listeCommande=$manager->SelectLiCommande();
 foreach ($listeCommande as $unecommande) {
-	
 
 echo 
 '<tr>
@@ -185,21 +153,14 @@ echo
 
 	</form>
 
-
-
 	</fieldset>
-
 
 	</div>
 
-
-	
 	</header>
 
 	<footer>
 	
-
-
 	</footer>
 
 

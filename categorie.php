@@ -1,7 +1,5 @@
 <?php
 
-
-
 class categorie
 {
 	protected $CatId;
@@ -49,14 +47,6 @@ class categorie
 		return $this->CatLib;
 	}
 
-
-
-
-
-
-
-
 }
-
 
 ?>

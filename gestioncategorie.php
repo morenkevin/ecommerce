@@ -22,16 +22,10 @@ spl_autoload_register('autoloader');
 
 $manager= new manager($pdo);
 
-
-
-
 ?>
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css" type="txt/css">
-
-
-
 
 </head>
 
@@ -41,9 +35,6 @@ $manager= new manager($pdo);
 	<header>
 	<div class="en-tete">
 	<a href="menu.php"><div class="logo"></div></a>
-
-
-
 	</div>		
 	<div class="sider"><nav>Rayon :
 	<ul>
@@ -70,8 +61,6 @@ $manager= new manager($pdo);
 	}
 	?>
 		
-	
-
 		<?php 
 
 		foreach ($manager->SelectLiCategorie() as $uncategorie) {
@@ -81,7 +70,6 @@ $manager= new manager($pdo);
 
 	echo '<br>';
 	echo '<li><a href="listeproduit.php?categorie='.$uncategorie->CatId().'">'.$uncategorie->CatLib().'</a></li>';
-	
 
 }
 
@@ -96,7 +84,6 @@ if (isset($_POST['valider'])) {
 if (isset($_GET['modifier'])) {
 	
 	$categ=$manager->SelectCategorie($_GET['modifier']);
-
 
 }
 
@@ -123,26 +110,14 @@ if (isset($_GET['supprimer'])) {
 
 }
 
-
-
-
-
 ?>
-
-
-
-
 	</ul>
 	</nav>
 	</div>
 
 	<div class="main">
 
-
-
 <table>
-
-
 <tr>
 <th>Categorie Id</th>
 <th>Cat Libéllé</th>
@@ -187,17 +162,10 @@ echo
 
 
 	</div>
-
-
 	
 	</header>
 
 	<footer>
-	
-
 
 	</footer>
-
-
-
 </body>
