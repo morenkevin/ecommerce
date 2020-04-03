@@ -1,0 +1,176 @@
+
+
+
+
+body
+{
+	
+background-image: url('images cmoins cher/fond.jpg');
+background-size: cover;
+
+
+}
+
+.sider 
+{
+	background-color: white;
+
+	
+	width: 8%;
+	height: 30%;
+	float:left;
+	margin-top: 50px;
+	margin-left: 20px;
+	border:solid;
+	border-width: 3px;
+	border-color: black;
+
+}
+
+.en-tete
+{
+background-color: blue;
+height: 10%;
+width: 100%;
+background-image: url('images cmoins cher/bandeauHaut.jpg');
+background-size: cover;
+
+
+
+
+}
+
+.main
+{
+
+background-color: red;
+height: 80%;
+width: 80%;
+margin:auto;
+background-image: url('images cmoins cher/bg_corp.gif');
+border:solid;
+border-color: black;
+border-width: 3px;
+
+
+}
+
+.slider
+{
+margin-top: 50px;
+height: 300px;
+background-color: grey;
+margin-left:5px;
+margin-right: 5px;
+border-width: 1px;
+border: solid;
+border-color: black;
+
+
+
+
+
+}
+
+.logo
+{
+
+background-image: url('images cmoins cher/logo.gif');
+background-repeat: no-repeat;
+height: 60px;
+width: 300px;
+
+
+}
+
+ul {
+list-style:none;
+margin-left:0;
+padding-left:0;
+}
+
+.block1
+{
+margin-top:50px;
+background-color: white;
+height:100px;
+width: 300px; 
+float: left;
+margin-left: 5px;
+border: solid;
+border-color: black;
+border-width: 3px;
+
+}
+
+.block2
+{
+margin-top: 50px;
+background-color: white;
+height:100px;
+width: 300px; 
+float: right;
+margin-right: 5px;
+border: solid;
+border-color: black;
+border-width: 3px;
+	
+}
+
+.item
+{
+padding-top: 30px;
+background-color:red;
+height: 200px;
+width: 400px;
+margin-left:70px;
+float: left;
+background-image: url('images cmoins cher/extensa.jpg');
+background-size: 400px 205px;
+
+
+}
+.item1
+{
+padding-top: 30px;
+background-color:red;
+height: 200px;
+width: 400px;
+margin-left:70px;
+float: left;
+background-image: url('images cmoins cher/Lumix.jpg');
+background-size: 400px 205px;
+
+}
+.item2
+{
+padding-top: 30px;
+background-color:red;
+height: 200px;
+width: 400px;
+margin-left:70px;
+float: left;
+background-image: url('images cmoins cher/panasonic.jpg');
+background-size: 400px 205px;
+
+}
+.slider > p
+{
+
+color: white;
+text-align: center;
+
+
+
+}
+
+table,tr,th,td
+{
+
+border:solid;
+border-color: black;
+border-width: 1px;
+
+
+
+}
