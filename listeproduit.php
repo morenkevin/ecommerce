@@ -1,44 +1,13 @@
-
-
 <?php
 
 session_start();
 
-function autoloader($classname)
-{
-	require $classname.'.php';
-}
-
-try{
-$pdo=new pdo('mysql:host=localhost;dbname=ecommerce','root','');
-
-}
-catch(PDOException $e)
-{
-echo 'impossible de se connecter a la bdd'.$e->getmessage();
-}
-
-spl_autoload_register('autoloader');
-
-
-$manager= new manager($pdo);
-
-
-
-
-
-
-
-
-
+include("connexionBDD.php");
 
 ?>
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css" type="txt/css">
-
-
-
 
 </head>
 
