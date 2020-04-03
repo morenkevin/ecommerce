@@ -2,7 +2,7 @@
 session_start();
 
 require 'panier.class.php';
-
+ 
 function autoloader($classname)
 {
 	require $classname.'.php';
